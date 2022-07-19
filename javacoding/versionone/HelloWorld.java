@@ -2,15 +2,24 @@ package javacoding.versionone;
 
 public class HelloWorld {
   public static void main(String[] atgs) {
+    Figure f1 = new Figure();
+    f1.onDraw();
+
+    Figure f2 = new Ellipse();
+    f2.onDraw();
+
+    Figure f3 = new Triangle();
+    f3.onDraw();
+
     // String s1 = new String("Hello");
     // String nameStr = new String('zhangxianlei');
     // String dogName = "little dog";
     // String heName = new String("is a real name");
-    Person newPerson = new Person("zhangxianlei", 47);
+    // Person newPerson = new Person("zhangxianlei", 47);
     // newPerson.showName();
-    Student lili = new Student("lily", 16, "shushaxiaoxue");
-    lili.setX();
-    lili.printX();
+    // Student lili = new Student("lily", 16, "shushaxiaoxue");
+    // lili.setX();
+    // lili.printX();
     // newPerson();
    /*  String s1 = new String("Hello");
     String s2 = new String("Hello");
