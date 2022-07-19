@@ -1,8 +1,20 @@
 package javacoding.versionone;
 
-import java.util.Date;
+// import java.util.Date;
 public class Student extends Person {
-    public String school;
+    String school;
+    public Student(String name, int age, String school) {
+        super(name, age);
+        this.school = school;
+    }
+
+    @Override 
+    public String toString() {
+        return "Student [school = " + school 
+        + ", name = " + name
+        + ", age = " + age + "]";
+    }
+    /* public String school;
     int x = 50;
     public void setX () {
         this.x = 10000;
@@ -21,5 +33,5 @@ public class Student extends Person {
     public Student(String name, int age, String school) {
         super(name, age);
         this.school = school;
-    }
+    } */
 }

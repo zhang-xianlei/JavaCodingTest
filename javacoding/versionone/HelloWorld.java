@@ -2,14 +2,40 @@ package javacoding.versionone;
 
 public class HelloWorld {
   public static void main(String[] atgs) {
-    Figure f1 = new Figure();
+    Student student1 = new Student("Tom", 20, "清华大学");
+    Student student2 = new Student("Leo", 19, "北京大学");
+    Student student3 = new Student("Nanaw", 18, "中国科技大学");
+
+    Worker worker1 = new Worker("SanZhang", 30, "科大讯飞");
+    Worker worker2 = new Worker("SiLi", 35, "阳光电源");
+
+    Person[] people = { student1, student2, student3, worker1, worker2};
+    
+    int studentCount = 0;
+    int workerCount = 0;
+    int personCount = 0;
+    for(Person item: people) {
+      if(item instanceof Worker) {
+        workerCount += 1;
+      } else if(item instanceof Student) {
+        studentCount += 1;
+      }
+      if(item instanceof Person) {
+        personCount += 1;
+      }
+    }
+
+    System.out.printf("工人人数：%d, 学生人数：%d, 总人数：%d", workerCount, studentCount, personCount);
+
+
+   /*  Figure f1 = new Figure();
     f1.onDraw();
 
     Figure f2 = new Ellipse();
     f2.onDraw();
 
     Figure f3 = new Triangle();
-    f3.onDraw();
+    f3.onDraw(); */
 
     // String s1 = new String("Hello");
     // String nameStr = new String('zhangxianlei');

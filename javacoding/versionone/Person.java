@@ -1,9 +1,21 @@
 package javacoding.versionone;
 
-import java.util.Date;
+// import java.util.Date;
 
 public class Person {
-    private String name;
+    String name;
+    int age;
+    public Person(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+
+    @Override 
+    public String toString() {
+        return "Person [name = " + name
+        + ". age = " + age + "]";
+    }
+    /* private String name;
     private int age;
     private Date birthDate;
     int x = 20;
@@ -20,7 +32,7 @@ public class Person {
     
     public Person(String name, int age){
         this(name, age, new Date());
-    }
+    } */
 
    /*  public String getInfo() {
         return "Person [ name = " + name
