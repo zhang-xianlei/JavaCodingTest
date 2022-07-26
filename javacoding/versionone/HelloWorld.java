@@ -2,20 +2,29 @@ package javacoding.versionone;
 
 public class HelloWorld {
   public static void main(String[] args) {
-    Person p1 = new Student("Lily", 19, "zhengzhou University");
-    Person p2 = new Worker("Joson", 44, "yongning Ltd");
-    Person p3 = new Person("Coco", 36);
-    Student p4 = new Student("Tom", 20, "tinghua College");
-    Worker p5 = new Worker("Chandeler", 50, "fading Factory");
-    Person p = (Person) p4;
-    Student p11 = (Student) p1;
-    Worker p12 = (Worker) p2;
-    // Student p111 = (Student) p2;
-    if (p2 instanceof Student) {
-      Student p112 = (Student) p2;
-    }
-    System.out.println(p11.toString());
-    System.out.println(p.toString());
+    Figure F1 = new Triangle();
+    F1.onDraw();
+
+    Figure F2 = new Ellipse();
+    F2.onDraw();
+
+    // 引用类型转换
+    /*
+     * Person p1 = new Student("Lily", 19, "zhengzhou University");
+     * Person p2 = new Worker("Joson", 44, "yongning Ltd");
+     * Person p3 = new Person("Coco", 36);
+     * Student p4 = new Student("Tom", 20, "tinghua College");
+     * Worker p5 = new Worker("Chandeler", 50, "fading Factory");
+     * Person p = (Person) p4;
+     * Student p11 = (Student) p1;
+     * Worker p12 = (Worker) p2;
+     * // Student p111 = (Student) p2;
+     * if (p2 instanceof Student) {
+     * Student p112 = (Student) p2;
+     * }
+     * System.out.println(p11.toString());
+     * System.out.println(p.toString());
+     */
 
     // 应用类型检查
     /*
