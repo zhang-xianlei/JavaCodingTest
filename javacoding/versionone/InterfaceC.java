@@ -2,12 +2,12 @@ package javacoding.versionone;
 
 public interface InterfaceC extends InterfaceB {
   @Override
-  void methodA();
+  public void methodA();
 
   @Override
-  void methodB();
+  public void methodB();
 
   @Override
-  void methodC();
+  public void methodC();
 
 }
