@@ -2,7 +2,7 @@ package javacoding.versionone;
 
 public class HelloWorld {
   public static void main(String[] args) {
-    Figure F1 = new Triangle();
+    Triangle F1 = new Triangle();
     F1.onDraw();
 
     Figure F2 = new Ellipse();
