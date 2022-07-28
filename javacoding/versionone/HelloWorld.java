@@ -6,7 +6,10 @@ public class HelloWorld {
     F1.onDraw();
 
     Figure F2 = new Ellipse();
+    System.out.println(F2 instanceof Ellipse);
     F2.onDraw();
+    F1.printName();
+    System.out.println(F1.name);
 
     // 引用类型转换
     /*
