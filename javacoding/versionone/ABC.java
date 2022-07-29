@@ -1,17 +1,18 @@
 package javacoding.versionone;
 
-public class ABC implements InterfaceA{
+public class ABC implements InterfaceA {
     @Override
-    public void methodA(){
+    public void methodA() {
 
-    };
+    }
+
     @Override
-    public String methodB(){
+    public String methodB() {
         return "实现methodB的方法";
     }
 
-    @Override 
-    public int methodC(){
+    @Override
+    public int methodC() {
         return 500;
     }
 }
