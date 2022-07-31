@@ -4,18 +4,21 @@ public class HelloWorld {
   public static void main(String[] args) {
     InterfaceA abc = new ABC();
     System.out.println(abc.methodB());
+    // System.out.println(InterfaceA.methodC());
     System.out.println(abc.methodC());
     System.out.println(abc.methodD());
     System.out.println(InterfaceA.methodE());
-    //抽象类继承
-   /*  Triangle F1 = new Triangle();
-    F1.onDraw();
-
-    Figure F2 = new Ellipse();
-    System.out.println(F2 instanceof Ellipse);
-    F2.onDraw();
-    F1.printName();
-    System.out.println(F1.name); */
+    // 抽象类继承
+    /*
+     * Triangle F1 = new Triangle();
+     * F1.onDraw();
+     * 
+     * Figure F2 = new Ellipse();
+     * System.out.println(F2 instanceof Ellipse);
+     * F2.onDraw();
+     * F1.printName();
+     * System.out.println(F1.name);
+     */
 
     // 引用类型转换
     /*

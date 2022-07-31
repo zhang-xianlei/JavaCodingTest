@@ -5,10 +5,6 @@ public interface InterfaceA {
 
   String methodB();
 
-  default int methodC() {
-    return 0;
-  };
-
   default String methodD() {
     return "这是确认方法";
   }
@@ -17,4 +13,7 @@ public interface InterfaceA {
     return 0.0;
   }
 
+  default int methodC() {
+    return 0;
+  };
 }
