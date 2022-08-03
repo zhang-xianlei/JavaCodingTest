@@ -22,6 +22,11 @@ public class HelloWorld {
       default:
         System.out.println("周末");
     }
+    System.out.println(day);
+    System.out.println(day.getInfo());
+    System.out.println(Weekdays.getStaticVar());
+    System.out.println(Weekdays.sum);
+    System.out.println(day.buga);
   }
 
 }
