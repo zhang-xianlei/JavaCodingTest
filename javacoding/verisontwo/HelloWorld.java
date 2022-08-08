@@ -2,17 +2,48 @@ package javacoding.verisontwo;
 
 public class HelloWorld {
   public static void main(String[] args) {
+    // 构造方法
+    Integer objInt = Integer.valueOf(80);
+    Double objDouble = Double.valueOf(80.0);
+    Float objFloat = Float.valueOf("80.0");
+    Long objLong = Long.valueOf("80");
+    // Number 类方法
+    long longVar = objInt.longValue();
+    int intVar = objDouble.intValue();
+    System.out.println("intVar = " + intVar);
+    System.out.println("longVar = " + longVar);
+    // compareTo 方法
+    Float objFloat2 = Float.valueOf(100);
+    int result = objFloat.compareTo(objFloat2);
+    System.out.println(result);
 
-    String intExample = "ABC";
-    String intExampleD = "def";
-    int intExampleB = Integer.parseInt(intExample, 16);
-    int intExampleE = Integer.parseInt(intExampleD, 16);
-    System.out.println(intExampleB);
-    System.out.println(intExampleE);
-    Person p1 = new Person("Tony", 20);
-    Person p2 = new Person("Lily", 23);
-    System.out.println(p1.toString());
-    System.out.println(p1.equals(p2));
+    // 字符串转化成基本数据类型
+    int intVar2 = Integer.parseInt("100");
+    int intVar3 = Integer.parseInt("ABC", 16);
+    System.out.println("intVar2 = " + intVar2);
+    System.out.println("intVar3 = " + intVar3);
+
+    // 基本数据类型转化成字符串
+    String str1 = Integer.toString(100, 2);
+    String str2 = Double.toString(100.00);
+    System.out.println("str1 = " + str1);
+    System.out.println("str2 = " + str2);
+
+    // 包装类
+    /*
+     * String intExample = "ABC";
+     * String intExampleD = "def";
+     * int intExampleB = Integer.parseInt(intExample, 16);
+     * int intExampleE = Integer.parseInt(intExampleD, 16);
+     * String stringInt = Integer.toString(1101010, 16);
+     * System.out.println(intExampleB);
+     * System.out.println(intExampleE);
+     * System.out.println(stringInt);
+     * Person p1 = new Person("Tony", 20);
+     * Person p2 = new Person("Lily", 23);
+     * System.out.println(p1.toString());
+     * System.out.println(p1.equals(p2));
+     */
     // 枚举类的构造方法
     /*
      * Weekdays[] allValues = Weekdays.values();
