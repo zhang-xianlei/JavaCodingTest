@@ -1,7 +1,8 @@
 package javacoding.verisontwo;
 
-import java.math.BigDecimal;
-import java.math.BigInteger;
+// import java.math.BigDecimal;
+// import java.math.BigInteger;
+import java.util.Date;
 
 public class HelloWorld {
   public static int display(Integer objInt) {
@@ -16,7 +17,39 @@ public class HelloWorld {
     System.out.println();
   }
 
+  public static void displayC(Date now, Date date) {
+    System.out.println("now.after(date) = " + now.after(date));
+    System.out.println("now.before(date) = " + now.before(date));
+    System.out.println("now.compareTo(date) = " + now.compareTo(date));
+  }
+
   public static void main(String[] args) {
+    Outer outer = new Outer();
+    outer.add(100, 200);
+    // inner class
+    /*
+     * Outer outer = new Outer();
+     * outer.test();
+     * Outer.Inner inner = outer.new Inner();
+     * inner.display();
+     */
+    // inner static class
+    /*
+     * View.Button viewButton = new View.Button();
+     * viewButton.onClick();
+     */
+
+    // Date
+    /*
+     * Date now = new Date();
+     * System.out.println("now = " + now);
+     * System.out.println("now.getTime() = " + now.getTime());
+     * Date date = new Date(1234567890123L);
+     * displayC(now, date);
+     * date.setTime(999999999999999L);
+     * System.out.println("modifed date = " + date);
+     * displayC(now, date);
+     */
     // BigDecimal
     /*
      * BigDecimal num1 = new BigDecimal("999999999.99888888");

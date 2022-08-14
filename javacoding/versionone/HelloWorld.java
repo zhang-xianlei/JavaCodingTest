@@ -2,12 +2,31 @@ package javacoding.versionone;
 
 public class HelloWorld {
   public static void main(String[] args) {
-    InterfaceA abc = new ABC();
-    System.out.println(abc.methodB());
-    // System.out.println(InterfaceA.methodC());
-    System.out.println(abc.methodC());
-    System.out.println(abc.methodD());
-    System.out.println(InterfaceA.methodE());
+    View view = new View();
+    view.handler(new OnClickListener() {
+      @Override
+      public void onClick() {
+        System.out.println("Implements the classes inside the interface");
+      }
+      /*
+       * Figure f = new Figure(){
+       * 
+       * @Override
+       * public void onDraw(){
+       * System.out.println("inherit the anonymous class inside the class");
+       * }
+       * }
+       */
+    });
+    // interface
+    /*
+     * InterfaceA abc = new ABC();
+     * System.out.println(abc.methodB());
+     * // System.out.println(InterfaceA.methodC());
+     * System.out.println(abc.methodC());
+     * System.out.println(abc.methodD());
+     * System.out.println(InterfaceA.methodE());
+     */
     // 抽象类继承
     /*
      * Triangle F1 = new Triangle();
