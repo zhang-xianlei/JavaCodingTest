@@ -32,7 +32,7 @@ public class ListDemo {
     // int item = (Integer) list.get(0);
     // System.out.println(item);
     for (int i = 0; i < list.size(); i++) {
-      System.out.printf("list item of list(%d) : $s\n", i, (String) list.get(i));
+      System.out.printf("list item of list(%d) : %s\n", i, (String) list.get(i));
     }
     for (Object item : list) {
       String s = (String) item;
