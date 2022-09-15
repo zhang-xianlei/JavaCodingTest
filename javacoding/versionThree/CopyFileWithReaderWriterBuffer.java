@@ -18,10 +18,11 @@ public class CopyFileWithReaderWriterBuffer {
             long startTime = System.nanoTime();
             String line = bis.readLine();
             while(line != null){
-                // String copyStr = new String(linse);
+                // String copyStr = new String(line);
                 // System.out.println(copyStr);
                 // System.out.println("division line is here");
                 bos.write(line);
+                bos.newLine();
                 line = bis.readLine();
             }
             long elapsedTime = System.nanoTime() - startTime;
