@@ -1,4 +1,4 @@
-package javacoding.src.com.sungrowCharger;
+package com.sungrowCharger;
 
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;

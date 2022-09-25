@@ -1,7 +1,7 @@
-package javacoding.src.com.sungrow;
+package com.sungrow;
 
 public class PriorityPra {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Thread t1 = new Thread(new Runner());
         t1.setPriority(Thread.MIN_PRIORITY);
         t1.start();

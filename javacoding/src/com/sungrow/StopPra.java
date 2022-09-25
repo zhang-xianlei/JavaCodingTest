@@ -1,4 +1,4 @@
-package javacoding.src.com.sungrow;
+package com.sungrow;
 
 import java.io.BufferedReader;
 import java.io.IOException;

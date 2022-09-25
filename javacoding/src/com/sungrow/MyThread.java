@@ -1,4 +1,4 @@
-package javacoding.src.com.sungrow;
+package com.sungrow;
 
 public class MyThread extends Thread{
     public MyThread(){

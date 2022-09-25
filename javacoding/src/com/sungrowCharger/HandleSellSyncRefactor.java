@@ -1,16 +1,16 @@
-package javacoding.src.com.sungrowCharger;
+package com.sungrowCharger;
 
 public class HandleSellSyncRefactor {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         TicketDB db = new TicketDB();
         Thread t1 = new Thread(() -> {
-            while(true){
-                if(!job(db)){
+            while (true) {
+                if (!job(db)) {
                     break;
                 }
-                try{
+                try {
                     Thread.sleep(1000);
-                } catch(InterruptedException e) {
+                } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
@@ -18,13 +18,13 @@ public class HandleSellSyncRefactor {
         t1.start();
 
         Thread t2 = new Thread(() -> {
-            while(true){
-                if(!job(db)){
+            while (true) {
+                if (!job(db)) {
                     break;
                 }
-                try{
+                try {
                     Thread.sleep(1000);
-                } catch(InterruptedException e){
+                } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
@@ -32,10 +32,10 @@ public class HandleSellSyncRefactor {
         t2.start();
     }
 
-    private static boolean job(TicketDB db){
-        synchronized(db){
+    private static boolean job(TicketDB db) {
+        synchronized (db) {
             int currTicketAccount = db.getTicketCount();
-            if(currTicketAccount > 0) {
+            if (currTicketAccount > 0) {
                 db.sellTicket();
             } else {
                 return false;
@@ -44,6 +44,6 @@ public class HandleSellSyncRefactor {
             System.out.printf("%S -- selling the %d ticket. \n", threadName, currTicketAccount);
             return true;
         }
-        
+
     }
 }
