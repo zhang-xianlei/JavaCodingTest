@@ -17,3 +17,5 @@ learning java step by step
     public interface InterfaceB extends InterfaceA {
       
     }
+
+## [DatagramSocket how to set port](./javacoding/src/com/sungrowCharger/UdpChatServer.java)
