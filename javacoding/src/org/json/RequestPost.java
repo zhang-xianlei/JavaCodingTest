@@ -8,7 +8,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-
 public class RequestPost {
   static String urlString = "http://localhost:8080/NoteWebService/note.do";
 
@@ -21,12 +20,11 @@ public class RequestPost {
       conn.setRequestMethod("POST");
       conn.setDoOutput(true);
       String params = String.format("ID = %s & action = %s", "10", "query");
-
+      // set params
       DataOutputStream dStream = new DataOutputStream(conn.getOutputStream());
       dStream.writeBytes(params);
       dStream.close();
-
-      // InputStream is = conn.getInputStream();
+      // open the inputStream of network communication
       InputStream is = conn.getInputStream();
 
       InputStreamReader isr = new InputStreamReader(is, "utf-8");
