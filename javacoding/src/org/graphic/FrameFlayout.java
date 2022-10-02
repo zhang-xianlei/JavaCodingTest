@@ -2,6 +2,7 @@ package org.graphic;
 
 import java.awt.FlowLayout;
 import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -12,7 +13,7 @@ public class FrameFlayout extends JFrame {
 
   public FrameFlayout(String title) {
     super(title);
-    setLayout(new FlowLayout(FlowLayout.LEFT, 20, 20));
+    setLayout(new FlowLayout(FlowLayout.RIGHT));
     label = new JLabel("Label");
     getContentPane().add(label);
 
@@ -22,6 +23,9 @@ public class FrameFlayout extends JFrame {
     JButton button2 = new JButton("button2");
     getContentPane().add(button2);
 
+    JButton button3 = new JButton("button3");
+    getContentPane().add(button3);
+
     setSize(350, 120);
     setVisible(true);
 
@@ -30,6 +34,12 @@ public class FrameFlayout extends JFrame {
     });
     button1.addActionListener((e) -> {
       label.setText("Hello button2");
+    });
+    button3.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent event) {
+        label.setText("Hello everyone");
+      }
     });
   }
 
