@@ -25,6 +25,7 @@ public class UrlPra {
       while (line != null) {
         sb.append(line);
         sb.append("\n");
+        line = br.readLine();
       }
       System.out.println(sb);
     } catch (IOException e) {
