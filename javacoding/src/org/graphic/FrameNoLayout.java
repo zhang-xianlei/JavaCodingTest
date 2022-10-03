@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class FrameNoLayout extends JFrame {
+
   public FrameNoLayout(String title) {
     super(title);
     setResizable(false);
